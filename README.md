@@ -1,4 +1,4 @@
-# WNAffect-Compatibility
+# WNAffect
 A python package to get the emotion of a word.
 
 ## Preparation
