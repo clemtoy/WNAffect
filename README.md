@@ -30,6 +30,9 @@ Output:
 #### Print the tree of emotions:
 Finally, ***after a WNAffect instanciation***, it is possible to print the tree of known emotions from any node:
 ```python
+from wnaffect import WNAffect
+from emotion import Emotion
+
 WNAffect('wordnet-1.6/', 'wn-domains-3.2/')
 Emotion.printTree(Emotion.emotions["annoyance"])
 ```
