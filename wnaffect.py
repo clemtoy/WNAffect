@@ -51,7 +51,7 @@ class WNAffect:
     def _load_emotions(self, wn_domains_dir):
         """Loads the hierarchy of emotions from the WordNet-Affect xml."""
         
-        tree = ET.parse("{0}/wn-affect-1.1/a-hierarchy-corrected.xml".format(wn_domains_dir))
+        tree = ET.parse("{0}/wn-affect-1.1/a-hierarchy.xml".format(wn_domains_dir))
         root = tree.getroot()
         for elem in root.findall("categ"):
             name = elem.get("name")
