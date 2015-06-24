@@ -6,7 +6,7 @@ Clement Michard (c) 2015
 import os
 import sys
 import nltk
-import emotion
+from emotion import Emotion
 from nltk.corpus import WordNetCorpusReader
 import xml.etree.ElementTree as ET
 
