@@ -1,5 +1,5 @@
 # WNAffect-Compatibility
-A python script to get the emotion of a word.
+A python package to get the emotion of a word.
 
 ## Preparation
 This package needs NLTK and [WordNet-Domains](http://wndomains.fbk.eu/download.html).
