@@ -11,8 +11,8 @@ In the ```wn-domains-3.2/wn-affect-1.1/a-hierarchy.xml``` file, you should corre
 from wnaffect import WNAffect
 
 wna = WNAffect('wordnet-1.6/', 'wn-domains-3.2/')
-emotion = wna.get_emotion('angry', 'JJ')
-print emotion
+emo = wna.get_emotion('angry', 'JJ')
+print emo
 ```
 Output:
 ```python
@@ -21,7 +21,7 @@ Output:
 #### Access to parent emotions:
 It is possible to access to the parent emotions thanks to the ```Emotion.get_level(int)``` function:
 ```python
-print ' -> '.join([emotion.get_level(i).name for i in range(emotion.level + 1)])
+print ' -> '.join([emo.get_level(i).name for i in range(emo.level + 1)])
 ```
 Output:
 ```python
