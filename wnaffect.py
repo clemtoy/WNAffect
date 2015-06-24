@@ -6,6 +6,7 @@ Clement Michard (c) 2015
 import os
 import sys
 import nltk
+import emotion
 from nltk.corpus import WordNetCorpusReader
 import xml.etree.ElementTree as ET
 
@@ -59,7 +60,6 @@ class WNAffect:
             else:
                 Emotion.emotions[name] = Emotion(name, elem.get("isa"))
     
-    
     def get_emotion(self, word, pos):
         """Returns the emotion of the word.
             word -- the word (str)
@@ -75,45 +75,8 @@ class WNAffect:
                     return self.synsets[pos][offset]
         return None
 
-        
-class Emotion:
-    """Defines an emotion."""
-    
-    emotions = {} # name to emotion (str -> Emotion)
-    
-    def __init__(self, name, parent_name=None):
-        """Initializes an Emotion object.
-            name -- name of the emotion (str)
-            parent_name -- name of the parent emotion (str)
-        """
-        
-        self.name = name
-        self.parent = None
-        self.level = 0
-        self.children = []
-        
-        if parent_name:
-            self.parent = Emotion.emotions[parent_name] if parent_name else None
-            self.parent.children.append(self)
-            self.level = self.parent.level + 1
             
-            
-    def get_level(self, level):
-        """Returns the parent of self at the given level.
-            level -- level in the hierarchy (int)        
-        """
-        
-        em = self
-        while em.level > level and em.level >= 0:
-            em = em.parent
-        return em
-    
-    
-    def __str__(self):
-        """Returns the emotion string formatted."""
-        
-        return self.name
-            
+
             
 if __name__ == "__main__":
     wordnet16, wndomains32, word, pos = sys.argv[1:5]
