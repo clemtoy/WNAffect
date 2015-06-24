@@ -28,7 +28,7 @@ Output:
 >>> root -> mental-state -> affective-state -> emotion -> negative-emotion -> general-dislike -> anger
 ```
 #### Print the tree of emotions:
-Finally, ***after a WNAffet instanciation***, it is possible to print the tree of known emotions from any node:
+Finally, ***after a WNAffect instanciation***, it is possible to print the tree of known emotions from any node:
 ```python
 WNAffect('wordnet-1.6/', 'wn-domains-3.2/')
 Emotion.printTree(Emotion.emotions["annoyance"])
