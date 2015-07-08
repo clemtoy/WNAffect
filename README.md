@@ -19,7 +19,7 @@ Output:
 >>> anger
 ```
 #### Access to parent emotions:
-It is possible to access to the parent emotions thanks to the ```Emotion.get_level(int)``` function:
+It is possible to access to the parent emotions thanks to the ```Emotion.get_level(self, int)``` function:
 ```python
 print ' -> '.join([emo.get_level(i).name for i in range(emo.level + 1)])
 ```
