@@ -16,7 +16,7 @@ print emo
 ```
 Output:
 ```python
->>> anger
+anger
 ```
 #### Access to parent emotions:
 It is possible to access to the parent emotions thanks to the ```Emotion.get_level(self, int)``` function:
@@ -25,7 +25,7 @@ print ' -> '.join([emo.get_level(i).name for i in range(emo.level + 1)])
 ```
 Output:
 ```python
->>> root -> mental-state -> affective-state -> emotion -> negative-emotion -> general-dislike -> anger
+root -> mental-state -> affective-state -> emotion -> negative-emotion -> general-dislike -> anger
 ```
 #### Print the tree of emotions:
 Finally, ***after a WNAffect instanciation***, it is possible to print the tree of known emotions from any node:
