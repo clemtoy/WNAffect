@@ -3,7 +3,7 @@ A python package to get the emotion of a word.
 
 ## Preparation
 This package requires NLTK, [WordNet 1.6](http://wordnet.princeton.edu/wordnet/download/old-versions/) and [WordNet-Domains](http://wndomains.fbk.eu/download.html).
-In the ```wn-domains-3.2/wn-affect-1.1/a-hierarchy.xml``` file, you should correct the "simpathy" word by "sympathy".
+In the ```wn-domains-3.2/wn-affect-1.1/a-hierarchy.xml``` file, you should correct `simpathy` by `sympathy`.
 
 ## Use
 #### Main example:
