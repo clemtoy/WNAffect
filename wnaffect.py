@@ -81,4 +81,4 @@ class WNAffect:
 if __name__ == "__main__":
     wordnet16, wndomains32, word, pos = sys.argv[1:5]
     wna = WNAffect(wordnet16, wndomains32)
-    print wna.get_emotion(word, pos)
+    print(wna.get_emotion(word, pos))
