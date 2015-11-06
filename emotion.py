@@ -83,7 +83,7 @@ class Emotion:
             end_shape = '┐'
         else:
             end_shape = ''
-        print '{0}{1}{2}{3}'.format(indent, start_shape, emotion.name, end_shape)
+        print('{0}{1}{2}{3}'.format(indent, start_shape, emotion.name, end_shape))
         for leaf in down:
             next_last = 'down' if down.index(leaf) is len(down) - 1 else ''
             next_indent = '{0}{1}{2}'.format(indent, ' ' if 'down' in last else '│', " " * len(emotion.name))
