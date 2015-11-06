@@ -12,7 +12,7 @@ from wnaffect import WNAffect
 
 wna = WNAffect('wordnet-1.6/', 'wn-domains-3.2/')
 emo = wna.get_emotion('angry', 'JJ')
-print emo
+print(emo)
 ```
 Output:
 ```python
@@ -21,7 +21,7 @@ anger
 #### Access to parent emotions:
 It is possible to access to the parent emotions thanks to the ```Emotion.get_level(self, int)``` function:
 ```python
-print ' -> '.join([emo.get_level(i).name for i in range(emo.level + 1)])
+print(' -> '.join([emo.get_level(i).name for i in range(emo.level + 1)]))
 ```
 Output:
 ```python
