@@ -36,8 +36,6 @@ from emotion import Emotion
 WNAffect('wordnet-1.6/', 'wn-domains-3.2/')
 Emotion.printTree(Emotion.emotions["annoyance"])
 ```
-To print the whole tree: `Emotion.printTree(Emotion.emotions["root"])`
-
 Output:
 ```
           ┌pique
@@ -47,3 +45,4 @@ Output:
           ├harassment
           └aggravation
 ```
+To print the whole tree: `Emotion.printTree(Emotion.emotions["root"])`
