@@ -1,7 +1,7 @@
 # WNAffect
 WNAffect is a python package to get the emotion of a word using WordNet resources.
 
-## Preparation
+## Requirements
 This package requires NLTK, [WordNet 1.6 (UNIX-like)](http://wordnet.princeton.edu/wordnet/download/old-versions/) and [WordNet-Domains 3.2](http://wndomains.fbk.eu/download.html).
 
 ***WARNING: In the ```wn-domains-3.2/wn-affect-1.1/a-hierarchy.xml``` file, you should correct `simpathy` by `sympathy`.***
