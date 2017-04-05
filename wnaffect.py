@@ -70,9 +70,10 @@ class WNAffect:
             pos = self.flat_pos[pos]
             synsets = self.wn16.synsets(word, self.wn_pos[pos])         
             if synsets:
-                offset = synsets[0].offset()
-                if offset in self.synsets[pos]:
-                    return self.synsets[pos][offset]
+                for synset in synsets:
+                    offset = synset.offset()
+                    if offset in self.synsets[pos]:
+                        return self.synsets[pos][offset]
         return None
         
     def get_emotion_synset(self, offset):
