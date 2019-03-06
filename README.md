@@ -334,10 +334,9 @@ This package contains two classes: `WNAffect` and `Emotion`. These two classes a
 The WNAffect object allows to load WordNet 1.6 and Word Domains 3.2 resources.
 
 #### WNAffect(*wordnet16_dir*, *wn_domains_dir*)
-This is the constructor of a WNAffect object. It needs the paths to WordNet 1.6 and WordNet Domains 3.2.
+This is the constructor of a WNAffect object. It requires two arguments:
 - `wordnet16_dir` the wordnet-1.6 folder
 - `wn_domains_dir` the wn-domains-3.2 folder
-- Returns the WNAffect object
 
 Example:
 ```python
@@ -365,14 +364,13 @@ emo = wna.get_emotion_synset(5574157)
 
 ### Emotion
 
-The Emotion object is a node of the emotion tree.
-If the Emotion object is a leaf, it wraps the conception on a emotion.
-Otherwise, it represents a category of emotions.
+The Emotion object is a node in the tree of emotions.
+The leafs are emotions and the other nodes are categories of emotions.
 
-- `name` the name of the emotion or category of emotion
+- `name` the name of the Emotion
 - `parent` the parent Emotion in the tree
 - `level` the level of the node in the tree
-- `children` the array of children nodes
+- `children` the array of children Emotion nodes
 
 The Emotion class also contains a static dict `Emotion.emotions` containing the emotion names as keys and the emotion objects as values.
 
